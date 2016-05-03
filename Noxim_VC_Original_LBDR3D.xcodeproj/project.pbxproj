@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		622D9A7C1AC3015500EEADEE /* Noxim_VC_Original.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 622D9A7B1AC3015500EEADEE /* Noxim_VC_Original.1 */; };
+		622D9A7F1AC3015500EEADEE /* libsystemc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 622D9A7E1AC3015500EEADEE /* libsystemc.a */; };
+		622D9AB01AC3060300EEADEE /* NoximBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A871AC3060300EEADEE /* NoximBuffer.cpp */; };
+		622D9AB11AC3060300EEADEE /* NoximCmdLineParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A891AC3060300EEADEE /* NoximCmdLineParser.cpp */; };
+		622D9AB51AC3060300EEADEE /* NoximGlobalRoutingTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A911AC3060300EEADEE /* NoximGlobalRoutingTable.cpp */; };
+		622D9AB61AC3060300EEADEE /* NoximGlobalStats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A931AC3060300EEADEE /* NoximGlobalStats.cpp */; };
+		622D9AB71AC3060300EEADEE /* NoximGlobalTrafficTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A951AC3060300EEADEE /* NoximGlobalTrafficTable.cpp */; };
+		622D9AB91AC3060300EEADEE /* NoximLocalRoutingTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A991AC3060300EEADEE /* NoximLocalRoutingTable.cpp */; };
+		622D9ABA1AC3060300EEADEE /* NoximMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A9B1AC3060300EEADEE /* NoximMain.cpp */; };
+		622D9ABB1AC3060300EEADEE /* NoximNoC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9A9D1AC3060300EEADEE /* NoximNoC.cpp */; };
+		622D9ABC1AC3060300EEADEE /* NoximPower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9AA01AC3060300EEADEE /* NoximPower.cpp */; };
+		622D9ABD1AC3060300EEADEE /* NoximProcessingElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9AA21AC3060300EEADEE /* NoximProcessingElement.cpp */; };
+		622D9ABF1AC3060300EEADEE /* NoximReservationTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9AA61AC3060300EEADEE /* NoximReservationTable.cpp */; };
+		622D9AC01AC3060300EEADEE /* NoximRouter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9AA81AC3060300EEADEE /* NoximRouter.cpp */; };
+		622D9AC11AC3060300EEADEE /* NoximStats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 622D9AAA1AC3060300EEADEE /* NoximStats.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		622D9A731AC3015500EEADEE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				622D9A7C1AC3015500EEADEE /* Noxim_VC_Original.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		622D9A751AC3015500EEADEE /* Noxim_VC_Original_LBDR3D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Noxim_VC_Original_LBDR3D; sourceTree = BUILT_PRODUCTS_DIR; };
+		622D9A7B1AC3015500EEADEE /* Noxim_VC_Original.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Noxim_VC_Original.1; sourceTree = "<group>"; };
+		622D9A7E1AC3015500EEADEE /* libsystemc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsystemc.a; path = /Library/SystemC/Current/libsystemc.a; sourceTree = "<absolute>"; };
+		622D9A871AC3060300EEADEE /* NoximBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximBuffer.cpp; sourceTree = "<group>"; };
+		622D9A881AC3060300EEADEE /* NoximBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximBuffer.h; sourceTree = "<group>"; };
+		622D9A891AC3060300EEADEE /* NoximCmdLineParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximCmdLineParser.cpp; sourceTree = "<group>"; };
+		622D9A8A1AC3060300EEADEE /* NoximCmdLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximCmdLineParser.h; sourceTree = "<group>"; };
+		622D9A911AC3060300EEADEE /* NoximGlobalRoutingTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximGlobalRoutingTable.cpp; sourceTree = "<group>"; };
+		622D9A921AC3060300EEADEE /* NoximGlobalRoutingTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximGlobalRoutingTable.h; sourceTree = "<group>"; };
+		622D9A931AC3060300EEADEE /* NoximGlobalStats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximGlobalStats.cpp; sourceTree = "<group>"; };
+		622D9A941AC3060300EEADEE /* NoximGlobalStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximGlobalStats.h; sourceTree = "<group>"; };
+		622D9A951AC3060300EEADEE /* NoximGlobalTrafficTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximGlobalTrafficTable.cpp; sourceTree = "<group>"; };
+		622D9A961AC3060300EEADEE /* NoximGlobalTrafficTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximGlobalTrafficTable.h; sourceTree = "<group>"; };
+		622D9A991AC3060300EEADEE /* NoximLocalRoutingTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximLocalRoutingTable.cpp; sourceTree = "<group>"; };
+		622D9A9A1AC3060300EEADEE /* NoximLocalRoutingTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximLocalRoutingTable.h; sourceTree = "<group>"; };
+		622D9A9B1AC3060300EEADEE /* NoximMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximMain.cpp; sourceTree = "<group>"; };
+		622D9A9C1AC3060300EEADEE /* NoximMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximMain.h; sourceTree = "<group>"; };
+		622D9A9D1AC3060300EEADEE /* NoximNoC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximNoC.cpp; sourceTree = "<group>"; };
+		622D9A9E1AC3060300EEADEE /* NoximNoC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximNoC.h; sourceTree = "<group>"; };
+		622D9AA01AC3060300EEADEE /* NoximPower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximPower.cpp; sourceTree = "<group>"; };
+		622D9AA11AC3060300EEADEE /* NoximPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximPower.h; sourceTree = "<group>"; };
+		622D9AA21AC3060300EEADEE /* NoximProcessingElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximProcessingElement.cpp; sourceTree = "<group>"; };
+		622D9AA31AC3060300EEADEE /* NoximProcessingElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximProcessingElement.h; sourceTree = "<group>"; };
+		622D9AA61AC3060300EEADEE /* NoximReservationTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximReservationTable.cpp; sourceTree = "<group>"; };
+		622D9AA71AC3060300EEADEE /* NoximReservationTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximReservationTable.h; sourceTree = "<group>"; };
+		622D9AA81AC3060300EEADEE /* NoximRouter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximRouter.cpp; sourceTree = "<group>"; };
+		622D9AA91AC3060300EEADEE /* NoximRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximRouter.h; sourceTree = "<group>"; };
+		622D9AAA1AC3060300EEADEE /* NoximStats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoximStats.cpp; sourceTree = "<group>"; };
+		622D9AAB1AC3060300EEADEE /* NoximStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximStats.h; sourceTree = "<group>"; };
+		622D9AAE1AC3060300EEADEE /* NoximTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoximTile.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		622D9A721AC3015500EEADEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622D9A7F1AC3015500EEADEE /* libsystemc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		622D9A6C1AC3015500EEADEE = {
+			isa = PBXGroup;
+			children = (
+				622D9A771AC3015500EEADEE /* Noxim_VC_Original */,
+				622D9A761AC3015500EEADEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		622D9A761AC3015500EEADEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				622D9A751AC3015500EEADEE /* Noxim_VC_Original_LBDR3D */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		622D9A771AC3015500EEADEE /* Noxim_VC_Original */ = {
+			isa = PBXGroup;
+			children = (
+				622D9A7B1AC3015500EEADEE /* Noxim_VC_Original.1 */,
+				622D9A781AC3015500EEADEE /* Source */,
+				622D9A7D1AC3015500EEADEE /* Libraries */,
+			);
+			path = Noxim_VC_Original;
+			sourceTree = "<group>";
+		};
+		622D9A781AC3015500EEADEE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				622D9A871AC3060300EEADEE /* NoximBuffer.cpp */,
+				622D9A881AC3060300EEADEE /* NoximBuffer.h */,
+				622D9A891AC3060300EEADEE /* NoximCmdLineParser.cpp */,
+				622D9A8A1AC3060300EEADEE /* NoximCmdLineParser.h */,
+				622D9A911AC3060300EEADEE /* NoximGlobalRoutingTable.cpp */,
+				622D9A921AC3060300EEADEE /* NoximGlobalRoutingTable.h */,
+				622D9A931AC3060300EEADEE /* NoximGlobalStats.cpp */,
+				622D9A941AC3060300EEADEE /* NoximGlobalStats.h */,
+				622D9A951AC3060300EEADEE /* NoximGlobalTrafficTable.cpp */,
+				622D9A961AC3060300EEADEE /* NoximGlobalTrafficTable.h */,
+				622D9A991AC3060300EEADEE /* NoximLocalRoutingTable.cpp */,
+				622D9A9A1AC3060300EEADEE /* NoximLocalRoutingTable.h */,
+				622D9A9B1AC3060300EEADEE /* NoximMain.cpp */,
+				622D9A9C1AC3060300EEADEE /* NoximMain.h */,
+				622D9A9D1AC3060300EEADEE /* NoximNoC.cpp */,
+				622D9A9E1AC3060300EEADEE /* NoximNoC.h */,
+				622D9AA01AC3060300EEADEE /* NoximPower.cpp */,
+				622D9AA11AC3060300EEADEE /* NoximPower.h */,
+				622D9AA21AC3060300EEADEE /* NoximProcessingElement.cpp */,
+				622D9AA31AC3060300EEADEE /* NoximProcessingElement.h */,
+				622D9AA61AC3060300EEADEE /* NoximReservationTable.cpp */,
+				622D9AA71AC3060300EEADEE /* NoximReservationTable.h */,
+				622D9AA81AC3060300EEADEE /* NoximRouter.cpp */,
+				622D9AA91AC3060300EEADEE /* NoximRouter.h */,
+				622D9AAA1AC3060300EEADEE /* NoximStats.cpp */,
+				622D9AAB1AC3060300EEADEE /* NoximStats.h */,
+				622D9AAE1AC3060300EEADEE /* NoximTile.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		622D9A7D1AC3015500EEADEE /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				622D9A7E1AC3015500EEADEE /* libsystemc.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		622D9A741AC3015500EEADEE /* Noxim_VC_Original_LBDR3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622D9A821AC3015500EEADEE /* Build configuration list for PBXNativeTarget "Noxim_VC_Original_LBDR3D" */;
+			buildPhases = (
+				622D9A711AC3015500EEADEE /* Sources */,
+				622D9A721AC3015500EEADEE /* Frameworks */,
+				622D9A731AC3015500EEADEE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Noxim_VC_Original_LBDR3D;
+			productName = Noxim_VC_Original;
+			productReference = 622D9A751AC3015500EEADEE /* Noxim_VC_Original_LBDR3D */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		622D9A6D1AC3015500EEADEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Behrad Niazmand";
+				TargetAttributes = {
+					622D9A741AC3015500EEADEE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 622D9A701AC3015500EEADEE /* Build configuration list for PBXProject "Noxim_VC_Original_LBDR3D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 622D9A6C1AC3015500EEADEE;
+			productRefGroup = 622D9A761AC3015500EEADEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				622D9A741AC3015500EEADEE /* Noxim_VC_Original_LBDR3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		622D9A711AC3015500EEADEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622D9AB51AC3060300EEADEE /* NoximGlobalRoutingTable.cpp in Sources */,
+				622D9ABF1AC3060300EEADEE /* NoximReservationTable.cpp in Sources */,
+				622D9AB01AC3060300EEADEE /* NoximBuffer.cpp in Sources */,
+				622D9ABC1AC3060300EEADEE /* NoximPower.cpp in Sources */,
+				622D9AB91AC3060300EEADEE /* NoximLocalRoutingTable.cpp in Sources */,
+				622D9AC11AC3060300EEADEE /* NoximStats.cpp in Sources */,
+				622D9AB61AC3060300EEADEE /* NoximGlobalStats.cpp in Sources */,
+				622D9ABB1AC3060300EEADEE /* NoximNoC.cpp in Sources */,
+				622D9AC01AC3060300EEADEE /* NoximRouter.cpp in Sources */,
+				622D9ABA1AC3060300EEADEE /* NoximMain.cpp in Sources */,
+				622D9ABD1AC3060300EEADEE /* NoximProcessingElement.cpp in Sources */,
+				622D9AB11AC3060300EEADEE /* NoximCmdLineParser.cpp in Sources */,
+				622D9AB71AC3060300EEADEE /* NoximGlobalTrafficTable.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		622D9A801AC3015500EEADEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Library/SystemC/Current/include;
+				LIBRARY_SEARCH_PATHS = /Library/SystemC/Current;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		622D9A811AC3015500EEADEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Library/SystemC/Current/include;
+				LIBRARY_SEARCH_PATHS = /Library/SystemC/Current;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		622D9A831AC3015500EEADEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/SystemC/Current",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = Noxim_VC_Original_LBDR3D;
+			};
+			name = Debug;
+		};
+		622D9A841AC3015500EEADEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/SystemC/Current",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = Noxim_VC_Original_LBDR3D;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		622D9A701AC3015500EEADEE /* Build configuration list for PBXProject "Noxim_VC_Original_LBDR3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622D9A801AC3015500EEADEE /* Debug */,
+				622D9A811AC3015500EEADEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622D9A821AC3015500EEADEE /* Build configuration list for PBXNativeTarget "Noxim_VC_Original_LBDR3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622D9A831AC3015500EEADEE /* Debug */,
+				622D9A841AC3015500EEADEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 622D9A6D1AC3015500EEADEE /* Project object */;
+}
