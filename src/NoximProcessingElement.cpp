@@ -23,7 +23,7 @@ void NoximProcessingElement::rxProcess()
     } else {
         if (req_rx.read() == 1 - current_level_rx) {
             NoximFlit flit_tmp = flit_rx.read();
-//            if (NoximGlobalParams::verbose_mode > VERBOSE_OFF)
+            if (NoximGlobalParams::verbose_mode > VERBOSE_OFF)
             {
                 cout << sc_simulation_time() << ": ProcessingElement[" <<
                 local_id << "] RECEIVING " << flit_tmp << endl;
@@ -55,7 +55,7 @@ void NoximProcessingElement::txProcess()
         if (ack_tx.read() == current_level_tx) {
             if (!packet_queue.empty()) {
                 NoximFlit flit = nextFlit();	// Generate a new flit
-//                if (NoximGlobalParams::verbose_mode > VERBOSE_OFF)
+                if (NoximGlobalParams::verbose_mode > VERBOSE_OFF)
                 {
                     cout << sc_time_stamp().to_double() /
                     1000 << ": ProcessingElement[" << local_id <<

@@ -525,7 +525,7 @@ void NoximNoC::buildMesh()
     // Vertical bit initialization (Nu, Eu, Wu, Su, Nd, Ed, Wd and Sd) for UP and DOWN elevator nodes (or both)
     
     ifstream inputFile;
-    inputFile.open("elevator_nodes.txt");
+    inputFile.open("elevator_nodes_20_percent.txt");
     
     int no_of_elevator_nodes;
     inputFile >> no_of_elevator_nodes;
