@@ -43,6 +43,7 @@ int   NoximGlobalParams::partitions                       = DEFAULT_PARTITIONS;
 int   NoximGlobalParams::rnd_generator_seed               = time(NULL);
 bool  NoximGlobalParams::detailed                         = DEFAULT_DETAILED;
 float NoximGlobalParams::dyad_threshold                   = DEFAULT_DYAD_THRESHOLD;
+char  NoximGlobalParams::elevator_nodes_filename[256]     = DEFAULT_ELEVATOR_NODES_FILENAME;
 char  NoximGlobalParams::traffic_fname[128]               = DEFAULT_TRAFFIC_FNAME;
 bool  NoximGlobalParams::rnd_traffic                      = DEFAULT_RND_TRAFFIC;
 unsigned int NoximGlobalParams::data_encoding             = DEFAULT_DENC;

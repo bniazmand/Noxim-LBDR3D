@@ -239,6 +239,10 @@ void parseCmdLine(int arg_num, char *arg_vet[])
       }
 	  else if (!strcmp(arg_vet[i], "-nvirtchannel"))
 		  NoximGlobalParams::number_virtual_channel = atoi(arg_vet[++i]);
+      else if (!strcmp(arg_vet[i], "-elevator_nodes"))
+      {
+          strcpy(NoximGlobalParams::elevator_nodes_filename, arg_vet[++i]);
+      }        
       else if (!strcmp(arg_vet[i], "-routing"))
       {
 	char *routing = arg_vet[++i];

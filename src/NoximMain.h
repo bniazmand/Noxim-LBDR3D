@@ -118,6 +118,7 @@ using namespace std;
 #define DEFAULT_PACKET_INJECTION_RATE             0.005
 #define DEFAULT_PROBABILITY_OF_RETRANSMISSION     0.005
 #define DEFAULT_TRAFFIC_DISTRIBUTION    TRAFFIC_RANDOM
+#define DEFAULT_ELEVATOR_NODES_FILENAME        "Elevator_nodes_scenarios/elevator_nodes_full_3d_mesh.txt"
 #define DEFAULT_TRAFFIC_TABLE_FILENAME              "Elevator_nodes_scenarios/traffic_table.txt"
 #define DEFAULT_RESET_TIME                        1000
 #define DEFAULT_SIMULATION_TIME                  10000
@@ -159,6 +160,7 @@ struct NoximGlobalParams
   static float packet_injection_rate;
   static float probability_of_retransmission;
   static int traffic_distribution;
+  static char elevator_nodes_filename[256];
   static char traffic_table_filename[128];
   static int simulation_time;
   static int stats_warm_up_time;
