@@ -115,10 +115,10 @@ using namespace std;
 #define DEFAULT_NUMBER_VIRTUAL_CHANNEL               2
 #define DEFAULT_ROUTING_TABLE_FILENAME              ""
 #define DEFAULT_SELECTION_STRATEGY          SEL_RANDOM
-#define DEFAULT_PACKET_INJECTION_RATE             0.018
-#define DEFAULT_PROBABILITY_OF_RETRANSMISSION     0.018
+#define DEFAULT_PACKET_INJECTION_RATE             0.005
+#define DEFAULT_PROBABILITY_OF_RETRANSMISSION     0.005
 #define DEFAULT_TRAFFIC_DISTRIBUTION    TRAFFIC_RANDOM
-#define DEFAULT_TRAFFIC_TABLE_FILENAME              "table.txt"
+#define DEFAULT_TRAFFIC_TABLE_FILENAME              "Elevator_nodes_scenarios/traffic_table.txt"
 #define DEFAULT_RESET_TIME                        1000
 #define DEFAULT_SIMULATION_TIME                  10000
 #define DEFAULT_STATS_WARM_UP_TIME  DEFAULT_RESET_TIME

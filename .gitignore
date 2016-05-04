@@ -26,3 +26,16 @@
 *.exe
 *.out
 *.app
+
+#others
+*.hmap
+*.dat
+*.dia
+*.d
+*.db
+*.xc*
+*.plist
+*.idx
+*.LinkFileList
+*.strings*
+!Noxim_LBDR3D.xcodeproj
