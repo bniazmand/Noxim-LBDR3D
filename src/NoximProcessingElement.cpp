@@ -248,11 +248,12 @@ NoximPacket NoximProcessingElement::trafficRandom()
         else
             re_transmit = 0;
     } while ((p.dst_id == p.src_id) || (re_transmit));
+    
     p.timestamp = sc_time_stamp().to_double() / 1000;
     p.size = p.flit_left = getRandomSize();
     
-    if (p.src_id == p.dst_id)
-        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
+//    if (p.src_id == p.dst_id)
+//        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
 
     return p;
 }
@@ -276,8 +277,8 @@ NoximPacket NoximProcessingElement::trafficTranspose1()
     p.timestamp = sc_time_stamp().to_double() / 1000 ;
     p.size = p.flit_left = getRandomSize();
     
-    if (p.src_id == p.dst_id)
-        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
+//    if (p.src_id == p.dst_id)
+//        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
     
     return p;
 }
@@ -301,8 +302,8 @@ NoximPacket NoximProcessingElement::trafficTranspose2()
     p.timestamp = sc_time_stamp().to_double() / 1000;
     p.size = p.flit_left = getRandomSize();
     
-    if (p.src_id == p.dst_id)
-        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
+//    if (p.src_id == p.dst_id)
+//        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
 
     return p;
 }
@@ -354,9 +355,9 @@ NoximPacket NoximProcessingElement::trafficBitReversal()
     p.timestamp = sc_time_stamp().to_double() / 1000;
     p.size      = p.flit_left = getRandomSize();
     
-    if (p.src_id == p.dst_id)
-        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
-
+//    if (p.src_id == p.dst_id)
+//        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
+    
     return p;
 }
 
@@ -407,8 +408,8 @@ NoximPacket NoximProcessingElement::trafficButterfly()
     p.timestamp = sc_time_stamp().to_double() / 1000 ;
     p.size      = p.flit_left = getRandomSize();
     
-    if (p.src_id == p.dst_id)
-        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
+//    if (p.src_id == p.dst_id)
+//        cout << "Traffic generator has generated a packet is sent from a node to itself !!! \n";
     
     return p;
 }

@@ -592,7 +592,7 @@ int NoximRouter::route(const NoximRouteData& route_data, int channel)
 {
   stats.power.Routing();
 
-  if (route_data.dst_id == local_id)
+  if (route_data.dst_id == local_id) // needed for Fig. 3d scenario:  || route_data.src_id == route_data.dst_id || route_data.dst_id == 14 || route_data.dst_id == 15 || route_data.dst_id == 14+16 || route_data.dst_id == 15+16 || route_data.dst_id == 14+16*2 || route_data.dst_id == 15+16*2 || route_data.dst_id == 14+16*3 || route_data.dst_id == 15+16*3 || route_data.src_id == 14 || route_data.src_id == 15 || route_data.src_id == 14+16 || route_data.src_id == 15+16 || route_data.src_id == 14+16*2 || route_data.src_id == 15+16*2 || route_data.src_id == 14+16*3 || route_data.src_id == 15+16*3)
   {
 //    cout << "Flit " << route_data.src_id << " -> " << route_data.dst_id << " has reached its destination! \n";
     return DIRECTION_LOCAL;

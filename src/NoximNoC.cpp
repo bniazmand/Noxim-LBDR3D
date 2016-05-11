@@ -566,7 +566,32 @@ void NoximNoC::buildMesh()
      {
      t[i1][j1][k1] -> r -> C_u = true;
      }
+ 
+   // End of New code (Making the topology full 3D Mesh)
+ 
 */
+    
+    // New code (Making the topology like Fig. 3d - 88% faulty vertical links with some faulty horizontal links)
+ /*
+    for (int k1 = 0; k1 < NoximGlobalParams::mesh_dim_z; k1++)
+        for (int i1 = 0; i1 < NoximGlobalParams::mesh_dim_x; i1++)
+            for (int j1 = 0; j1 < NoximGlobalParams::mesh_dim_y; j1++)
+            {
+                if (i1 >= 1 && j1 == NoximGlobalParams::mesh_dim_y - 1)
+                    t[i1][j1][k1] -> r -> C_e = false;
+                if (i1 >= 2 && j1 == 2)
+                    t[i1][j1][k1] -> r -> C_s = false;
+                if (i1 >= 2 && j1 == NoximGlobalParams::mesh_dim_y - 1)
+                {
+                    t[i1][j1][k1] -> r -> C_n = false;
+                    t[i1][j1][k1] -> r -> C_w = false;
+                    t[i1][j1][k1] -> r -> C_u = false;
+                    t[i1][j1][k1] -> r -> C_d = false;
+                }
+            }
+ */
+    // End of New code (Making the topology like Fig. 3d - 88% faulty vertical links with some faulty horizontal links)
+    
     
     // Resetting of elevator bits for routers
     
@@ -931,6 +956,29 @@ void NoximNoC::buildMesh()
         
         cout << "\n";
     }
+    
+    // New code (Making the topology like Fig. 3d - 88% faulty vertical links with some faulty horizontal links)
+ /*
+    for (int k1 = 0; k1 < NoximGlobalParams::mesh_dim_z; k1++)
+        for (int i1 = 0; i1 < NoximGlobalParams::mesh_dim_x; i1++)
+            for (int j1 = 0; j1 < NoximGlobalParams::mesh_dim_y; j1++)
+            {
+                if (i1 >= 2 && j1 == NoximGlobalParams::mesh_dim_y - 1)
+                {
+                    t[i1][j1][k1] -> r -> Nu = false;
+                    t[i1][j1][k1] -> r -> Eu = false;
+                    t[i1][j1][k1] -> r -> Wu = false;
+                    t[i1][j1][k1] -> r -> Su = false;
+                    
+                    t[i1][j1][k1] -> r -> Nd = false;
+                    t[i1][j1][k1] -> r -> Ed = false;
+                    t[i1][j1][k1] -> r -> Wd = false;
+                    t[i1][j1][k1] -> r -> Sd = false;
+                }
+            }
+ */
+    // End of New code (Making the topology like Fig. 3d - 88% faulty vertical links with some faulty horizontal links)
+
     
     // LBDR Routing Bits Initialization (R_ne , R_nw , R_en , R_es , R_wn , R_ws , R_se , R_sw)
     
