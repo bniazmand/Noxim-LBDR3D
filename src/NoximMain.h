@@ -106,7 +106,7 @@ using namespace std;
 #define DEFAULT_TRACE_FILENAME                      ""
 #define DEFAULT_MESH_DIM_X                           4
 #define DEFAULT_MESH_DIM_Y                           4
-#define DEFAULT_MESH_DIM_Z                           4
+#define DEFAULT_MESH_DIM_Z                           1
 #define DEFAULT_TOPOLOGY                      NET_MESH
 #define DEFAULT_BUFFER_DEPTH                         4
 #define DEFAULT_MAX_PACKET_SIZE                      8
@@ -123,7 +123,7 @@ using namespace std;
 #define DEFAULT_RESET_TIME                        1000
 #define DEFAULT_SIMULATION_TIME                  10000
 #define DEFAULT_STATS_WARM_UP_TIME  DEFAULT_RESET_TIME
-#define DEFAULT_DETAILED                         false
+#define DEFAULT_DETAILED                          true
 #define DEFAULT_DYAD_THRESHOLD                     0.6
 #define DEFAULT_MAX_VOLUME_TO_BE_DRAINED             0
 #define DEFAULT_FLIT_SIZE_BITS                      32

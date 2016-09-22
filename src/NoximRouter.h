@@ -85,7 +85,9 @@ SC_MODULE(NoximRouter)
     bool                   N_tierse, E_tierse, W_tierse, S_tierse;
     
     // Elevator list for each router (list of up and down and up/down vertical nodes in the network) in the current layer
-    vector <int> elevator_nodes_up, elevator_nodes_down;
+    vector <int>           elevator_nodes_up, elevator_nodes_down;
+    
+    unsigned long int      routed_flits_per_dir[4]; // routed flits for each 2D direction (N, E, W and S)
     
   // Functions
 
