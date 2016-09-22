@@ -111,15 +111,16 @@ using namespace std;
 #define DEFAULT_BUFFER_DEPTH                         4
 #define DEFAULT_MAX_PACKET_SIZE                      8
 #define DEFAULT_MIN_PACKET_SIZE                      8
-#define DEFAULT_ROUTING_ALGORITHM          ROUTING_WEST_FIRST
-#define DEFAULT_NUMBER_VIRTUAL_CHANNEL               2
+#define DEFAULT_ROUTING_ALGORITHM          ROUTING_XYZ
+#define DEFAULT_NUMBER_VIRTUAL_CHANNEL               1
 #define DEFAULT_ROUTING_TABLE_FILENAME              ""
 #define DEFAULT_SELECTION_STRATEGY         SEL_PATHAWARE_MINIMAL
 #define DEFAULT_PACKET_INJECTION_RATE             0.011
 #define DEFAULT_PROBABILITY_OF_RETRANSMISSION     0.011
-#define DEFAULT_TRAFFIC_DISTRIBUTION    TRAFFIC_BIT_REVERSAL
+#define DEFAULT_TRAFFIC_DISTRIBUTION    TRAFFIC_RANDOM
 #define DEFAULT_ELEVATOR_NODES_FILENAME        "Elevator_nodes_scenarios/elevator_nodes_40_percent.txt"
-#define DEFAULT_TRAFFIC_TABLE_FILENAME              "Elevator_nodes_scenarios/traffic_table.txt"
+#define DEFAULT_TRAFFIC_TABLE_FILENAME              "traffic_table.txt"
+// #define DEFAULT_TRAFFIC_TABLE_FILENAME              "Elevator_nodes_scenarios/traffic_table.txt"
 #define DEFAULT_RESET_TIME                        1000
 #define DEFAULT_SIMULATION_TIME                  10000
 #define DEFAULT_STATS_WARM_UP_TIME  DEFAULT_RESET_TIME

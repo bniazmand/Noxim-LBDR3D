@@ -21,6 +21,7 @@ class NoximGlobalStats
 public:
     
     template <typename T>
+
     struct Matrix : public vector<vector<vector<T> > > {};
     
     template <typename T>
@@ -78,6 +79,12 @@ public:
   // Returns the number of routed flits for each router
   Matrix <unsigned long> getRoutedFlitsMtx();
 
+  // Prints the number of routed flits for each router for each 2D direction (N, E, W and S)
+  void getRoutedFlitsPerDirection();
+    
+  // Writes the number of routed flits for each router for each 2D direction (N, E, W and S) to output.txt file
+  void writeRoutedFlitsPerDirectionToFile();
+    
   // Returns the total power (routers+links)
   double getPower();
 

@@ -128,7 +128,7 @@ void NoximRouter::rxProcess()
         reservation_table.clear();
         routed_flits = 0;
 
-        for(int i=0; i<DIRECTIONS; i++)
+        for(int i=0; i<4; i++)
             routed_flits_per_dir[i] = 0;
     }
     
@@ -385,16 +385,16 @@ void NoximRouter::txProcess()
                                     
                                     // Increment router flits per direction based on the input direction of the flit (packet)
                                     
-                                    if (i == DIRECTION_NORTH) // flit (packet) coming from North input
+                                    if (o == DIRECTION_NORTH) // flit (packet) coming from North input
                                         routed_flits_per_dir[DIRECTION_NORTH]++;
                                     
-                                    else if (i == DIRECTION_EAST) // flit (packet) coming from East input
+                                    else if (o == DIRECTION_EAST) // flit (packet) coming from East input
                                         routed_flits_per_dir[DIRECTION_EAST]++;
                                     
-                                    else if (i == DIRECTION_WEST) // flit (packet) coming from West input
+                                    else if (o == DIRECTION_WEST) // flit (packet) coming from West input
                                         routed_flits_per_dir[DIRECTION_WEST]++;
                                     
-                                    else if (i == DIRECTION_SOUTH) // flit (packet) coming from South input
+                                    else if (o == DIRECTION_SOUTH) // flit (packet) coming from South input
                                         routed_flits_per_dir[DIRECTION_SOUTH]++;
 
                                     flit.hop_no = flit.hop_no + 1;
@@ -471,6 +471,18 @@ void NoximRouter::txProcess()
                                 local_buffer.Pop();
                                 
                                 stats.power.Forward();
+                                
+                                if (o == DIRECTION_NORTH) // flit (packet) coming from North input
+                                    routed_flits_per_dir[DIRECTION_NORTH]++;
+                                
+                                else if (o == DIRECTION_EAST) // flit (packet) coming from East input
+                                    routed_flits_per_dir[DIRECTION_EAST]++;
+                                
+                                else if (o == DIRECTION_WEST) // flit (packet) coming from West input
+                                    routed_flits_per_dir[DIRECTION_WEST]++;
+                                
+                                else if (o == DIRECTION_SOUTH) // flit (packet) coming from South input
+                                    routed_flits_per_dir[DIRECTION_SOUTH]++;
                                 
                                 if (flit.flit_type == FLIT_TYPE_TAIL)
                                     reservation_table.release(o,current_local_channel);
@@ -1990,6 +2002,7 @@ unsigned long NoximRouter::getRoutedFlits()
 }
 
 //---------------------------------------------------------------------------
+
 
 unsigned int NoximRouter::getFlitsCount()
 {

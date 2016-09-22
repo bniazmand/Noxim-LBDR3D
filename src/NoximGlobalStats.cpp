@@ -261,6 +261,70 @@ NoximGlobalStats::Matrix<unsigned long> NoximGlobalStats::getRoutedFlitsMtx()
 
 //---------------------------------------------------------------------------
 
+void NoximGlobalStats::getRoutedFlitsPerDirection()
+{
+    // order : Router ID: North East West South
+    
+    for (int y = 0; y < NoximGlobalParams::mesh_dim_y; y++)
+        for (int x = 0; x < NoximGlobalParams::mesh_dim_x; x++)
+        {
+            cout << "R [" << coord2Id(x,y,0) << "] : ";
+            cout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_NORTH] << " " ;
+            cout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_EAST] << " " ;
+            cout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_WEST] << " " ;
+            cout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_SOUTH] << " " ;
+            cout << "\n";
+        }
+    
+    return;
+}
+
+//---------------------------------------------------------------------------
+
+void NoximGlobalStats::writeRoutedFlitsPerDirectionToFile()
+{
+    // output.txt file template
+    // # Number of nodes along X and Y directions respectively (2D Mesh Topology)
+    // Network size (e.g. 4 4 (for 4x4 network))
+    //# Traffic information
+    //# Number of Routers
+    //# Format: Router ID	NorthBuffer	EastBuffer	WestBuffer	SouthBuffer
+    //# Port numbers: 	North(N):0 ,    East(E):1 , 	West(W):2 , 	South(S):3
+
+    system("rm -f output.txt");
+
+    ofstream fout; // file pointer
+    fout.open("output.txt", ios::out | ios::app); // open the file for writing with append possibility
+
+    fout << "# Number of nodes along X and Y directions respectively (2D Mesh Topology)\n";
+    fout << NoximGlobalParams::mesh_dim_y << " " << NoximGlobalParams::mesh_dim_x <<"\n";
+    fout << "# Traffic information\n";
+    fout << "# Number of Routers\n";
+    fout << "# Format: Router ID\tNorthBuffer\tEastBuffer\tWestBuffer\tSouthBuffer\n";
+    fout << "# Port numbers:\tNorth(N):0 ,\tEast(E):1 ,\tWest(W):2 ,\tSouth(S):3\n";
+    fout << NoximGlobalParams::mesh_dim_x * NoximGlobalParams::mesh_dim_y << "\n"; // No. of Network nodes ( mesh_dim_x * mesh_dim_y)
+
+    for (int y = 0; y < NoximGlobalParams::mesh_dim_y; y++)
+        for (int x = 0; x < NoximGlobalParams::mesh_dim_x; x++)
+        {
+            fout << coord2Id(x,y,0) << " "; // Router ID
+            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_NORTH] << " " ;
+            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_EAST] << " " ;
+            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_WEST] << " " ;
+            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_SOUTH] << " " ;
+            fout << "\n";
+        }
+    
+    fout.close();
+    
+//    system("java -jar NoximGUI.jar");
+    
+    return;
+}
+
+//---------------------------------------------------------------------------
+
+
 double NoximGlobalStats::getPower()
 {
     double power = 0.0;
@@ -340,6 +404,15 @@ void NoximGlobalStats::showStats(std::ostream& out, bool detailed)
                 out << endl;
             }
         }
+        
+        out << endl;
+        
+        getRoutedFlitsPerDirection();
+        
+        writeRoutedFlitsPerDirectionToFile();
+        
+        out << endl;
+
         out << "];" << endl;
     }
 }
