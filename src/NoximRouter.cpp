@@ -733,7 +733,7 @@ int NoximRouter::selectionRandom(const vector<int>& directions)
 
 //---------------------------------------------------------------------------
 
-// Our proposed Selection Functions (Path-based Contention Aware)
+// Our proposed Selection Functions (Path-based Contention Aware, based on West-First turn model)
 
 int NoximRouter::selectionPathAwareMinimal(const vector<int>& directions,const NoximRouteData& route_data, int channel)
 {
@@ -752,7 +752,7 @@ int NoximRouter::selectionPathAwareMinimal(const vector<int>& directions,const N
             {
                 //                int i = rand() % directions.size();
                 //                return directions[i];
-                return selectionNoP(directions, route_data, channel);
+                return selectionBufferLevel(directions, channel);
             }
         }
         
@@ -779,7 +779,7 @@ int NoximRouter::selectionPathAwareMinimal(const vector<int>& directions,const N
             {
                 //                int i = rand() % directions.size();
                 //                return directions[i];
-                return selectionNoP(directions, route_data, channel);
+                return selectionBufferLevel(directions, channel);
             }
         }
         
