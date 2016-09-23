@@ -307,11 +307,17 @@ void NoximGlobalStats::writeRoutedFlitsPerDirectionToFile()
     for (int y = 0; y < NoximGlobalParams::mesh_dim_y; y++)
         for (int x = 0; x < NoximGlobalParams::mesh_dim_x; x++)
         {
-            fout << coord2Id(x,y,0) << " "; // Router ID
+            fout << coord2Id(x,y,0) << " " ; // Router ID
             fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_NORTH] << " " ;
-            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_EAST] << " " ;
-            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_WEST] << " " ;
+            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_EAST] << " "  ;
+            fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_WEST] << " "  ;
             fout << noc -> t[x][y][0] -> r -> routed_flits_per_dir[DIRECTION_SOUTH] << " " ;
+            
+            // LBDR(3D) Connectivity bits for 2D plane: Cn Ce Cw Cs
+            fout << noc -> t[x][y][0] -> r -> C_n << " " ;
+            fout << noc -> t[x][y][0] -> r -> C_e << " " ;
+            fout << noc -> t[x][y][0] -> r -> C_w << " " ;
+            fout << noc -> t[x][y][0] -> r -> C_s ;
             fout << "\n";
         }
     
@@ -407,11 +413,13 @@ void NoximGlobalStats::showStats(std::ostream& out, bool detailed)
         
         out << endl;
         
-        getRoutedFlitsPerDirection();
+        if (NoximGlobalParams::mesh_dim_z == 1)
+        {
+            getRoutedFlitsPerDirection();
+            writeRoutedFlitsPerDirectionToFile();
         
-        writeRoutedFlitsPerDirectionToFile();
-        
-        out << endl;
+            out << endl;
+        }
 
         out << "];" << endl;
     }

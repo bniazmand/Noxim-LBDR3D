@@ -1,0 +1,23 @@
+# Number of nodes along X and Y directions respectively (2D Mesh Topology)
+4 4
+# Traffic information
+# Number of Routers
+# Format: Router ID	NorthBuffer	EastBuffer	WestBuffer	SouthBuffer
+# Port numbers:	North(N):0 ,	East(E):1 ,	West(W):2 ,	South(S):3
+16
+0 0 648 0 968 0 1 0 1
+1 0 864 648 888 0 1 1 1
+2 0 731 808 584 0 1 1 1
+3 0 0 641 408 0 0 1 1
+4 984 768 0 1152 1 1 0 1
+5 784 1016 720 1200 1 1 1 1
+6 632 725 952 736 1 1 1 1
+7 464 0 736 652 1 0 1 1
+8 1288 688 0 856 1 1 0 1
+9 1093 984 712 952 1 1 1 1
+10 840 736 974 504 1 1 1 1
+11 632 0 688 544 1 0 1 1
+12 889 636 0 0 1 1 0 0
+13 816 963 642 0 1 1 1 0
+14 632 738 878 0 1 1 1 0
+15 497 0 751 0 1 0 1 0

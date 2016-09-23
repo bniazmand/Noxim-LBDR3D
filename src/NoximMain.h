@@ -111,8 +111,8 @@ using namespace std;
 #define DEFAULT_BUFFER_DEPTH                         4
 #define DEFAULT_MAX_PACKET_SIZE                      8
 #define DEFAULT_MIN_PACKET_SIZE                      8
-#define DEFAULT_ROUTING_ALGORITHM          ROUTING_XYZ
-#define DEFAULT_NUMBER_VIRTUAL_CHANNEL               1
+#define DEFAULT_ROUTING_ALGORITHM          ROUTING_WEST_FIRST
+#define DEFAULT_NUMBER_VIRTUAL_CHANNEL               2
 #define DEFAULT_ROUTING_TABLE_FILENAME              ""
 #define DEFAULT_SELECTION_STRATEGY         SEL_PATHAWARE_MINIMAL
 #define DEFAULT_PACKET_INJECTION_RATE             0.011
