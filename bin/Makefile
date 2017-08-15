@@ -25,7 +25,7 @@ DEBUG    := -g
 OTHER    := # -Wall -Wno-deprecated
 CXXFLAGS := $(OPT) $(OTHER) $(DEBUG)
 
-INCDIR := -I$(SRCDIR) -I$(SYSTEMC)/include 
+INCDIR := -I$(SRCDIR) -I$(SYSTEMC)/include -rpath=$(SYSTEMC_LIBS) 
 LIBDIR := -L$(SRCDIR) -L$(SYSTEMC_LIBS)
 
 LIBS := -lsystemc -lm 
